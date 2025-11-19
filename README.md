@@ -36,7 +36,7 @@ Backend Live URL
 https://real-time-chat-backend-2-dw7c.onrender.com
 
 Frontend Live URL  
-https://subtle-fenglisu-cf934c.netlify.app
+subtle-fenglisu-cf934c.netlify.app
 
 Backend GitHub Repository  
 https://github.com/Vishalaury/real-time-chat-backend
