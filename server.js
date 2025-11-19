@@ -157,7 +157,7 @@ app.get("/rooms/:room/messages", requireAuth, async (req, res) => {
 });
 
 /*  Dynamic Rooms */
-let rooms = ["general", "random", "tech", "music"];
+let rooms = ["main", "chil", "work", "fun"];
 let onlineUsers = {}; // { room: [username] }
 
 app.get("/rooms", (req, res) => {
