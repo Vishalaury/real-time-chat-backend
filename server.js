@@ -157,7 +157,7 @@ app.get("/rooms/:room/messages", requireAuth, async (req, res) => {
 });
 
 /*  Dynamic Rooms */
-let rooms = ["main", "chil", "work", "fun"];
+let rooms = ["main", "chill", "work", "fun"];
 let onlineUsers = {}; // { room: [username] }
 
 app.get("/rooms", (req, res) => {
@@ -182,7 +182,7 @@ app.delete("/rooms/:name", (req, res) => {
   const roomName = req.params.name;
 
   // Default rooms ko delete nahi hone dena
-  const protectedRooms = ["general", "random", "tech", "music"];
+  const protectedRooms = ["main", "chill", "work", "fun"];
 
   if (protectedRooms.includes(roomName)) {
     return res.status(400).json({ error: "Default rooms cannot be deleted" });
